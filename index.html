@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>musify</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/nav_side.css">
+    <link rel="stylesheet" href="./css/bottom_player.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="header__nav">
+                <ul class="header__nav__list">
+                    <li class="header__nav__list__item header__logo__img">
+                        <img src="./img/logo_white_withou_text.svg" alt="musify">
+                    </li>
+                    <li class="header__nav__list__item header__logo__text">
+                        <span>musify</span>
+                    </li>
+                    <li class="header__nav__list__item header__login__btn">
+                        <a href="#">
+                            <span>войти</span>
+                            <img src="./img/login.svg" alt="login">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="nav__side">
+            <div class="container">
+                <div class="nav__side__top">
+                    <h1 class="nav__side__heading">
+                        Моя медиатека
+                    </h1>
+                    <ul class="nav__side__list">
+                        <li class="nav__side__list__item active">
+                            <a href="#">
+                                <img src="./img/home.svg" alt="">
+                                <span>Главная</span>
+                            </a>
+                        </li>
+                        <li class="nav__side__list__item">
+                            <a href="#">
+                                <img src="./img/search_gray.svg" alt="">
+                                <span>Поиск</span>
+                            </a>
+                        </li>
+                        <li class="nav__side__list__item">
+                            <a href="#">
+                                <img src="./img/heart_fill_gray.svg" alt="">
+                                <span>Любимые треки</span>
+                            </a>
+                        </li>
+                        <li class="nav__side__list__item">
+                            <a href="#">
+                                <img src="./img/playlist_gray.svg" alt="">
+                                <span>Мои плейлисты</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="nav__side__logout__btn">
+                    <img src="./img/logout_gray.svg" alt="">
+                    <span>Выйти</span>
+                </a>
+            </div>
+        </section>
+        <section class="main">
+            <div class="container">
+                <div class="playlists">
+                    <h3 class="playlists__title">
+                        Мои плейлисты
+                    </h3>
+                    <ul class="playlists__list">
+                        <li class="playlists__list__item">
+                            <a href="#">
+                                <img src="./img/favorite_song.jpg" alt="">
+                                <span class="playlists__list__item__title">
+                                    Любимые треки
+                                </span>
+                            </a>
+                        </li>
+                        <li class="playlists__list__item">
+                            <a href="#">
+                                <img src="./img/arab_mix.jpg" alt="">
+                                <span class="playlists__list__item__title">
+                                    Arab Mix
+                                </span>
+                            </a>
+                        </li>
+                        <li class="playlists__list__item">
+                            <a href="#">
+                                <img src="./img/sad_mix.jpg" alt="">
+                                <span class="playlists__list__item__title">
+                                    Sad Mix
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="recommendation">
+                    <h3 class="recommendation__title">
+                        Реккомендуем
+                    </h3>
+                    <ul class="recommendation__list">
+                        <li class="recommendation__list__item">
+                            <a href="#">
+                                <img src="./img/lithe_hold_out.jpg" alt="">
+                                <div class="recommendation__list__item__info">
+                                    <span class="recommendation__list__item__info__song_name">
+                                        Hold out
+                                    </span>
+                                    <span class="recommendation__list__item__info__song_artist">
+                                        Lithe, FRVRFRIDAY
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="recommendation__list__item">
+                            <a href="#">
+                                <img class="artist" src="./img/loqiemean.jpg" alt="">
+                                <div class="recommendation__list__item__info">
+                                    <span class="recommendation__list__item__info__artist">
+                                        Loqiemean
+                                    </span>
+                                    <span class="recommendation__list__item__info__artist__description">
+                                        Артист
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="recommendation__list__item">
+                            <a href="#">
+                                <img src="./img/bad_jay.f.k.beats.jpg" alt="">
+                                <div class="recommendation__list__item__info">
+                                    <span class="recommendation__list__item__info__song_name">
+                                        Bad
+                                    </span>
+                                    <span class="recommendation__list__item__info__song_artist">
+                                        Jay.f.k beats
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="recommendation__list__item">
+                            <a href="#">
+                                <img src="./img/ivoxygen_kaleidoscope.jpg" alt="">
+                                <div class="recommendation__list__item__info">
+                                    <span class="recommendation__list__item__info__song_name">
+                                        Kaleidoscope
+                                    </span>
+                                    <span class="recommendation__list__item__info__song_artist">
+                                        Альбом | IVOXYGEN
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="recently">
+                    <h3 class="recently__title">
+                        Недавно прослушанные
+                    </h3>
+                    <ul class="recently__list">
+                        <li class="recently__list__item">
+                            <a href="#">
+                                <img src="./img/kendrick_lamar_gnx.jpg" alt="">
+                                <div class="recently__list__item__info">
+                                    <span class="recently__list__item__info__song_name">
+                                        hey now
+                                    </span>
+                                    <span class="recently__list__item__info__song_artist">
+                                        Kendrick Lamar, Dody6
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="recently__list__item">
+                            <a href="#">
+                                <img src="./img/havhavhav_lvbel_c5.jpg" alt="">
+                                <div class="recently__list__item__info">
+                                    <span class="recently__list__item__info__song_name">
+                                        HAVHAVHAV
+                                    </span>
+                                    <span class="recently__list__item__info__song_artist">
+                                        Lvbel C5
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="recently__list__item">
+                            <a href="#">
+                                <img src="./img/on_the_line_alblak_52.jpg" alt="">
+                                <div class="recently__list__item__info">
+                                    <span class="recently__list__item__info__song_name">
+                                        On The Line
+                                    </span>
+                                    <span class="recently__list__item__info__song_artist">
+                                        ALBLAK 52
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="recently__list__item">
+                            <a href="#">
+                                <img src="./img/sway_slowed_reverb.jpg" alt="">
+                                <div class="recently__list__item__info">
+                                    <span class="recently__list__item__info__song_name">
+                                        sway (slowed + reverb)
+                                    </span>
+                                    <span class="recently__list__item__info__song_artist">
+                                        ghostly echoes, creamy, 11:11 Music Group
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="bottom__player">
+            <div class="container">
+                <div class="song">
+                    <img src="./img/kendrick_lamar_gnx.jpg" alt="">
+                    <div class="song__info">
+                        <span class="song__info__name">
+                            hey now
+                        </span>
+                        <span class="song__info__artists">
+                            <a href="#">Kendrick Lamar</a>
+                            ,
+                            <a href="#">Dody6</a>
+                        </span>
+                    </div>
+                    <img class="song__favorite__btn" src="./img/heart_gray.svg" alt="">
+                </div>
+                <div class="player">
+                    <div class="player__btns">
+                        <img src="./img/previous_gray.svg" alt="">
+                        <img src="./img/start.svg" alt="" class="player__btns__start__stop">
+                        <img src="./img/next_gray.svg" alt="">
+                    </div>
+                    <div class="player__progress">
+                        <span class="player__progress__time">0:44</span>
+                        <span class="player__progress__line"></span>
+                        <span class="player__progress__time">3:37</span>
+                    </div>
+                </div>
+                <div class="volume">
+                    <img src="./img/volume.svg" alt="">
+                    <span class="volume__line"></span>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

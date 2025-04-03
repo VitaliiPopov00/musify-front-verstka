@@ -1,0 +1,87 @@
+.nav__side {
+    max-width: 350px;
+    width: 30%;
+    padding-left: 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px 0px 0px 20px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .nav__side__top {
+            .nav__side__heading {
+                margin: 0;
+                font-family: 'BoundedVariable', sans-serif;
+                font-weight: 700;
+                font-size: 20px;
+                color: #9e9e9e;
+                padding: 50px 0px 0px 30px;
+
+                &::first-letter {
+                    text-transform: uppercase;
+                }
+            }
+
+            .nav__side__list {
+                margin-top: 50px;
+                padding-left: 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                .nav__side__list__item {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+
+                        img {
+                            width: 30px;
+                            height: 30px;
+                        }
+
+                        span {
+                            font-family: 'BoundedVariable', sans-serif;
+                            font-size: 15px;
+                            color: #9e9e9e;
+                        }
+                    }
+
+                    &.active {
+                        a {
+                            span {
+                                color: #e0e0e0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .nav__side__logout__btn {
+            display: flex;
+            align-items: center;
+            padding-left: 30px;
+            gap: 20px;
+            margin-bottom: 30px;
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+
+            span {
+                font-family: 'BoundedVariable', sans-serif;
+                font-size: 15px;
+                color: #9e9e9e;
+            }
+        }
+    }
+}

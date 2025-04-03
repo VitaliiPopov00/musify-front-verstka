@@ -1,0 +1,182 @@
+.bottom__player {
+    padding: 10px 20px;
+
+    .container {
+        height: 120px;
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        position: relative;
+
+        .song {
+            display: flex;
+            align-items: center;
+
+            img {
+                border-radius: 10px;
+                width: 80px;
+                height: 80px;
+            }
+
+            .song__info {
+                margin-left: 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .song__info__name {
+                    font-size: 15px;
+                    font-family: 'UnboundedBold', sans-serif;
+                    color: #e0e0e0;
+                }
+
+                .song__info__artists {
+                    display: flex;
+                    font-size: 12px;
+                    font-family: 'BoundedVariable', sans-serif;
+                    font-weight: 400;
+                    color: #9e9e9e;
+
+                    a {
+                        font-size: 12px;
+                        font-family: 'BoundedVariable', sans-serif;
+                        font-weight: 400;
+                        color: #9e9e9e;
+                    }
+                }
+            }
+
+            .song__favorite__btn {
+                margin-left: 30px;
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+        .player {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            .player__btns {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                img {
+                    width: 35px;
+                    height: 35px;
+
+                    &.player__btns__start__stop {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+
+            .player__progress {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .player__progress__time {
+                    font-size: 11px;
+                    font-family: 'BoundedVariable', sans-serif;
+                    font-weight: 400;
+                    color: #9e9e9e;
+                }
+
+                .player__progress__line {
+                    width: 500px;
+                    height: 4px;
+                    border-radius: 999px;
+                    background-color: #5b5b5b;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 30%;
+                        background-color: #e0e0e0;
+                    }
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-45%);
+                        left: 30%;
+                        height: 10px;
+                        border-radius: 50%;
+                        width: 10px;
+                        background-color: #e0e0e0;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .volume {
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .volume__line {
+                width: 80px;
+                height: 4px;
+                border-radius: 999px;
+                background-color: #5b5b5b;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 30%;
+                    background-color: #e0e0e0;
+                }
+
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-45%);
+                    left: 30%;
+                    height: 10px;
+                    border-radius: 50%;
+                    width: 10px;
+                    background-color: #e0e0e0;
+                }
+            }
+
+
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

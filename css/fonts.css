@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'UnboundedBold';
+    src: url('../fonts/Unbounded/Unbounded-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UnboundedMedium';
+    src: url('../fonts/Unbounded/Unbounded-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UnboundedRegular';
+    src: url('../fonts/Unbounded/Unbounded-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BoundedRegular';
+    src: url('../fonts/Bounded/Bounded-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BoundedVariable';
+    src: url('../fonts/Bounded/Bounded-Variable.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
