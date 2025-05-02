@@ -1,0 +1,173 @@
+body {
+    background-color: #000;
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.form__title {
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-family: 'BoundedVariable', sans-serif;
+    font-weight: 700;
+    color: #e0e0e0;
+    text-align: center;
+    margin: 15px 0px;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    margin: 0px 10px 15px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px 20px 20px 20px;
+
+    .side__img {
+        align-self: stretch;
+        flex: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+            max-width: 700px;
+            max-height: 700px;
+        }
+    }
+
+    .register__form {
+        flex: 1;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        position: relative;
+        overflow: hidden;
+
+        .register__form__background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            filter: blur(20px);
+            z-index: -1;
+            width: 110%;
+            height: 110%;
+            object-fit: cover;
+
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+            width: 100%;
+            max-width: 350px;
+
+            .form__field {
+                display: flex;
+                flex-direction: column;
+
+                .form__field__label {
+                    font-family: 'BoundedVariable', sans-serif;
+                    font-weight: 400;
+                    color: #e0e0e0;
+                    font-size: 16px;
+                    margin-bottom: 13px;
+                    letter-spacing: 1px;
+                }
+
+                .form__field__input {
+                    box-sizing: border-box;
+                    outline: 1px solid #e0e0e0;
+                    font-family: 'BoundedVariable', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #e0e0e0;
+                    padding: 10px 15px;
+                    border-radius: 10px;
+                    transition: all 0.2s;
+
+                    &:hover {
+                        outline: 2px solid #e0e0e0;
+                    }
+
+                    &:focus {
+                        outline: 2px solid #e0e0e0;
+                    }
+
+                    &.form__field__input__success {
+                        outline: 2px solid rgba(0, 128, 0, 0.45);
+                    }
+
+                    &.form__field__input__invalid {
+                        outline: 2px solid rgba(255, 69, 58, 0.75);
+                    }
+                }
+
+                .form__field__message {
+                    color: rgba(255, 69, 58, 0.75);
+                    font-size: 13px;
+                    margin-top: 10px;
+                    font-family: 'BoundedVariable', sans-serif;
+                    font-weight: 400;
+                }
+            }
+
+            .form__button {
+                margin-top: 15px;
+                font-family: 'UnboundedBold', sans-serif;
+                font-weight: 400;
+                background-color: #e0e0e0;
+                border: none;
+                padding: 20px;
+                letter-spacing: 1px;
+                border-radius: 15px;
+                transition: .2s;
+                color: #333333;
+
+                &:hover {
+                    border-radius: 10px;
+                }
+            }
+
+            .line {
+                height: 1px;
+                background-color: #5b5b5b;
+                margin-top: 10px;
+                width: 120%;
+                align-self: center;
+            }
+        }
+
+        .register__form__redirect {
+            margin-top: 15px;
+            display: flex;
+            letter-spacing: 1px;
+
+            font-family: 'BoundedVariable', sans-serif;
+            font-weight: 400;
+            font-size: 13px;
+            color: #9e9e9e;
+            gap: 10px;
+            align-self: center;
+
+            a {
+                color: #9e9e9e;
+                border-bottom: 1px solid #9e9e9e;
+                padding-bottom: 2px;
+
+                &:hover {
+                    color: #e0e0e0;
+                    border-color: #e0e0e0;
+                }
+            }
+        }
+    }
+}

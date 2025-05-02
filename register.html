@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Musify | Регистрация</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/nav_side.css">
+    <link rel="stylesheet" href="./css/bottom_player.css">
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+<body>
+    <header>
+        <h1 class="form__title">Регистрация</h1>
+    </header>
+    <main>
+        <section class="side__img">
+            <img src="./img/shape-3.png" alt="">
+        </section>
+        <section class="register__form">'
+            <img class="register__form__background" src="./img/shape-2.png" alt="">
+            <form class="form" action="#">
+                <div class="form__field">
+                    <label for="login" class="form__field__label">
+                        Логин
+                    </label>
+                    <input id="login" type="text" class="form__field__input">
+                </div>
+                <div class="form__field">
+                    <label for="email" class="form__field__label">
+                        Адрес электронной почты
+                    </label>
+                    <input id="email" value="vpopov@gmail.com" type="text" class="form__field__input form__field__input__success">
+                </div>
+                <div class="form__field">
+                    <label for="password" class="form__field__label">
+                        Пароль
+                    </label>
+                    <input id="password" value="testtesttest" type="password" class="form__field__input">
+                </div>
+                <div class="form__field">
+                    <label for="password_repeat" class="form__field__label">
+                        Подтверждение пароля
+                    </label>
+                    <input id="password_repeat" value="testtest" type="password" class="form__field__input form__field__input__invalid">
+                    <p class="form__field__message">
+                        Пароли не совпадают
+                    </p>
+                </div>
+                <button type="submit" class="form__button">
+                    Зарегистрироваться
+                </button>
+                <span class="line"></span>
+            </form>
+            <div class="register__form__redirect">
+                <p>Есть аккаунт?</p>
+                <a href="./login.html">Войти</a>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
