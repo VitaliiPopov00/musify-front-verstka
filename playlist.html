@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>musify</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/playlist.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/nav_side.css">
+    <link rel="stylesheet" href="./css/bottom_player.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav class="header__nav">
+            <ul class="header__nav__list">
+                <li class="header__nav__list__item header__logo__img">
+                    <img src="./img/logo_white_withou_text.svg" alt="musify">
+                </li>
+                <li class="header__nav__list__item header__logo__text">
+                    <span>любимые треки</span>
+                </li>
+                <li class="header__nav__list__item header__login__btn">
+                    <a href="#">
+                        <span>войти</span>
+                        <img src="./img/login.svg" alt="login">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <section class="nav__side">
+        <div class="container">
+            <div class="nav__side__top">
+                <h1 class="nav__side__heading">
+                    Моя медиатека
+                </h1>
+                <ul class="nav__side__list">
+                    <li class="nav__side__list__item">
+                        <a href="#">
+                            <img src="./img/home_gray.svg" alt="">
+                            <span>Главная</span>
+                        </a>
+                    </li>
+                    <li class="nav__side__list__item">
+                        <a href="#">
+                            <img src="./img/search_gray.svg" alt="">
+                            <span>Поиск</span>
+                        </a>
+                    </li>
+                    <li class="nav__side__list__item active">
+                        <a href="#">
+                            <img src="./img/heart_fill.svg" alt="">
+                            <span>Любимые треки</span>
+                        </a>
+                    </li>
+                    <li class="nav__side__list__item">
+                        <a href="#">
+                            <img src="./img/playlist_gray.svg" alt="">
+                            <span>Мои плейлисты</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="nav__side__logout__btn">
+                <img src="./img/logout_gray.svg" alt="">
+                <span>Выйти</span>
+            </a>
+        </div>
+    </section>
+    <section class="main">
+        <div class="container">
+            <div class="playlist__header">
+                <img class="playlist__header__background" src="./img/favorite_playlist_icon.jpg" alt="">
+                <div class="playlist__header__icon">
+                    <img src="./img/favorite_playlist_icon.jpg" alt="">
+                </div>
+                <div class="playlist__header__info">
+                    <p class="playlist__header__info__type">
+                        Плейлист
+                    </p>
+                    <h1 class="playlist__header__info__title">
+                        Мои любимые треки
+                    </h1>
+                    <p class="playlist__header__info__count">
+                        783 трека
+                    </p>
+                </div>
+            </div>
+            <div class="playlist__tools">
+                <button class="playlist__tools__start">
+                    <img src="./img/play_without_circle_black.svg" alt="">
+                    Слушать
+                </button>
+                <form class="playlist__tools__search" action="#">
+                    <div class="form__field">
+                        <label for="title" class="form__field__label">
+                            Поиск трека
+                        </label>
+                        <input id="title" type="text" class="form__field__input">
+                    </div>
+                </form>
+            </div>
+            <ul class="playlist">
+                <li class="playlist__item">
+                    <div class="playlist__item__track__info">
+                        <div class="playlist__item__track__info__img">
+                            <img class="playlist__item__track__info__img__track" src="./img/friendly_monte_kristo.jpeg" alt="">
+                            <img class="playlist__item__track__info__img__play" src="./img/play_without_circle.svg" alt="">
+                        </div>
+                        <div class="playlist__item__track__info__title">
+                            <a href="#" class="playlist__item__track__info__title__song">
+                                Maestro
+                            </a>
+                            <div class="playlist__item__track__info__title__artist">
+                                <a href="#">FRIENDLY THUG 52 NGG</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlist__item__track__tools">
+                        <div class="playlist__item__track__tools__favorite">
+                            <img src="./img/heart_fill_gray.svg" alt="">
+                        </div>
+                        <div class="playlist__item__track__tools__time">
+                            2:29
+                        </div>
+                        <div class="playlist__item__track__tools__more">
+                            <img src="./img/more_gray.svg" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li class="playlist__item">
+                    <div class="playlist__item__track__info">
+                        <div class="playlist__item__track__info__img">
+                            <img class="playlist__item__track__info__img__track" src="./img/friendly_monte_kristo.jpeg" alt="">
+                            <img class="playlist__item__track__info__img__play" src="./img/play_without_circle.svg" alt="">
+                        </div>
+                        <div class="playlist__item__track__info__title">
+                            <a href="#" class="playlist__item__track__info__title__song">
+                                No Gletcher Gang 2
+                            </a>
+                            <div class="playlist__item__track__info__title__artist">
+                                <a href="#">FRIENDLY THUG 52 NGG</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlist__item__track__tools">
+                        <div class="playlist__item__track__tools__favorite">
+                            <img src="./img/heart_fill_gray.svg" alt="">
+                        </div>
+                        <div class="playlist__item__track__tools__time">
+                            1:56
+                        </div>
+                        <div class="playlist__item__track__tools__more">
+                            <img src="./img/more_gray.svg" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li class="playlist__item">
+                    <div class="playlist__item__track__info">
+                        <div class="playlist__item__track__info__img">
+                            <img class="playlist__item__track__info__img__track" src="./img/pharaoh_10_13.png" alt="">
+                            <img class="playlist__item__track__info__img__play" src="./img/play_without_circle.svg" alt="">
+                        </div>
+                        <div class="playlist__item__track__info__title">
+                            <a href="#" class="playlist__item__track__info__title__song">
+                                Чисто Символически
+                            </a>
+                            <div class="playlist__item__track__info__title__artist">
+                                <a href="#">PHARAOH</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlist__item__track__tools">
+                        <div class="playlist__item__track__tools__favorite">
+                            <img src="./img/heart_fill_gray.svg" alt="">
+                        </div>
+                        <div class="playlist__item__track__tools__time">
+                            1:58
+                        </div>
+                        <div class="playlist__item__track__tools__more">
+                            <img src="./img/more_gray.svg" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li class="playlist__item">
+                    <div class="playlist__item__track__info">
+                        <div class="playlist__item__track__info__img">
+                            <img class="playlist__item__track__info__img__track" src="./img/pharaoh_10_13.png" alt="">
+                            <img class="playlist__item__track__info__img__play" src="./img/play_without_circle.svg" alt="">
+                        </div>
+                        <div class="playlist__item__track__info__title">
+                            <a href="#" class="playlist__item__track__info__title__song">
+                                Танцы На Останках
+                            </a>
+                            <div class="playlist__item__track__info__title__artist">
+                                <a href="#">PHARAOH</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlist__item__track__tools">
+                        <div class="playlist__item__track__tools__favorite">
+                            <img src="./img/heart_fill_gray.svg" alt="">
+                        </div>
+                        <div class="playlist__item__track__tools__time">
+                            2:17
+                        </div>
+                        <div class="playlist__item__track__tools__more">
+                            <img src="./img/more_gray.svg" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li class="playlist__item">
+                    <div class="playlist__item__track__info">
+                        <div class="playlist__item__track__info__img">
+                            <img class="playlist__item__track__info__img__track" src="./img/pharaoh_10_13.png" alt="">
+                            <img class="playlist__item__track__info__img__play" src="./img/play_without_circle.svg" alt="">
+                        </div>
+                        <div class="playlist__item__track__info__title">
+                            <a href="#" class="playlist__item__track__info__title__song">
+                                Москва (Не Про)
+                            </a>
+                            <div class="playlist__item__track__info__title__artist">
+                                <a href="#">PHARAOH</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlist__item__track__tools">
+                        <div class="playlist__item__track__tools__favorite">
+                            <img src="./img/heart_fill_gray.svg" alt="">
+                        </div>
+                        <div class="playlist__item__track__tools__time">
+                            2:08
+                        </div>
+                        <div class="playlist__item__track__tools__more">
+                            <img src="./img/more_gray.svg" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li class="playlist__item">
+                    <div class="playlist__item__track__info">
+                        <div class="playlist__item__track__info__img">
+                            <img class="playlist__item__track__info__img__track" src="./img/loqi_ragequit.png" alt="">
+                            <img class="playlist__item__track__info__img__play" src="./img/play_without_circle.svg" alt="">
+                        </div>
+                        <div class="playlist__item__track__info__title">
+                            <a href="#" class="playlist__item__track__info__title__song">
+                                RAGE QUIT
+                            </a>
+                            <div class="playlist__item__track__info__title__artist">
+                                <a href="#">Loqiemean</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlist__item__track__tools">
+                        <div class="playlist__item__track__tools__favorite">
+                            <img src="./img/heart_fill_gray.svg" alt="">
+                        </div>
+                        <div class="playlist__item__track__tools__time">
+                            1:53
+                        </div>
+                        <div class="playlist__item__track__tools__more">
+                            <img src="./img/more_gray.svg" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li class="playlist__item">
+                    <div class="playlist__item__track__info">
+                        <div class="playlist__item__track__info__img">
+                            <img class="playlist__item__track__info__img__track" src="./img/loqi_ragequit.png" alt="">
+                            <img class="playlist__item__track__info__img__play" src="./img/play_without_circle.svg" alt="">
+                        </div>
+                        <div class="playlist__item__track__info__title">
+                            <a href="#" class="playlist__item__track__info__title__song">
+                                COPY ME
+                            </a>
+                            <div class="playlist__item__track__info__title__artist">
+                                <a href="#">Loqiemean</a>
+                                ,
+                                <a href="#">whiteback</a>
+                                ,
+                                <a href="#">Sqwore</a>
+                                ,
+                                <a href="#">Kill Eva</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlist__item__track__tools">
+                        <div class="playlist__item__track__tools__favorite">
+                            <img src="./img/heart_fill_gray.svg" alt="">
+                        </div>
+                        <div class="playlist__item__track__tools__time">
+                            3:00
+                        </div>
+                        <div class="playlist__item__track__tools__more">
+                            <img src="./img/more_gray.svg" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li class="playlist__item">
+                    <div class="playlist__item__track__info">
+                        <div class="playlist__item__track__info__img">
+                            <img class="playlist__item__track__info__img__track" src="./img/kendrick_lamar_gnx.jpg" alt="">
+                            <img class="playlist__item__track__info__img__play" src="./img/play_without_circle.svg" alt="">
+                        </div>
+                        <div class="playlist__item__track__info__title">
+                            <a href="#" class="playlist__item__track__info__title__song">
+                                hey now
+                            </a>
+                            <div class="playlist__item__track__info__title__artist">
+                                <a href="#">Kendrick Lamar</a>
+                                ,
+                                <a href="#">Dody6</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlist__item__track__tools">
+                        <div class="playlist__item__track__tools__favorite">
+                            <img src="./img/heart_fill_gray.svg" alt="">
+                        </div>
+                        <div class="playlist__item__track__tools__time">
+                            3:37
+                        </div>
+                        <div class="playlist__item__track__tools__more">
+                            <img src="./img/more_gray.svg" alt="">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+<footer>
+</footer>
+</body>
+</html>
